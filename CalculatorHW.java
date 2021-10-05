@@ -54,7 +54,7 @@ public class CalculatorHW {
 		
 		
 		calculate(menu, num1, num2);
-		
+	scan.close();	
 		
 	}//main
 	
@@ -68,11 +68,11 @@ public static void calculate(int menu, int num1, int num2) {
 //	while(test) {
 		switch (menu) {
 		case 1:
-			System.out.println("The sum of your two numbers is: " + addition(num1, num2));
+			System.out.println("The sum of your two numbers is: " + add(num1, num2));
 			break;
 		case 2:
 			
-			System.out.println("The difference of your two numbers is: " + subtraction(num1, num2));
+			System.out.println("The difference of your two numbers is: " + subtract(num1, num2));
 			break;
 			
 		case 3:
@@ -97,19 +97,19 @@ public static void calculate(int menu, int num1, int num2) {
 	 
 	
 }
-	public static int addition(int num1, int num2) {
+	public static int add(int num1, int num2) {
 
 		int sum = num1 + num2;
 		return sum;
 		
-	}//addition
+	}//end add
 	
-	public static int subtraction(int num1, int num2) {
+	public static int subtract(int num1, int num2) {
 
 		int diff = num1 - num2;
 		return diff;
 		
-	}//endsubtraction
+	}//end subtract
 	
 	public static int multiply(int num1, int num2) {
 
@@ -123,7 +123,7 @@ public static void calculate(int menu, int num1, int num2) {
 		int quotient = num1 / num2;
 		return quotient;
 		
-	}//end multiply
+	}//end divide
 
 
 }//end CalculatorHW 
