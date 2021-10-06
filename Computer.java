@@ -70,7 +70,8 @@ public class Computer {
 		// TODO Auto-generated method stub
 
 	}
-
+	//toString Method prints all of the object properties when invoked
+	//Eclipse Shortcut: file menu>> Source >> generate toString	
 	@Override
 	public String toString() {
 		return "Computer [Name=" + Name + ", Year=" + Year + ", Cost=" + Cost + "]";
