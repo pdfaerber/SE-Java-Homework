@@ -4,7 +4,7 @@ import java.util.*;
 public class Student extends Person {
 	String major;
 	String year;
-	Date gradYear; 
+	int gradYear; 
 	int scoreOne;
 	int scoreTwo;
 	int scoreThree; 
@@ -16,7 +16,7 @@ public class Student extends Person {
 	
 	
 
-	public Student(String pName, char pGender, int pAge, String major, String year, Date gradYear, int scoreOne, int scoreTwo, int scoreThree,
+	public Student(String pName, char pGender, int pAge, String major, String year, int gradYear, int scoreOne, int scoreTwo, int scoreThree,
 			double gpa) {
 		super(pName, pGender, pAge);
 		this.major = major;

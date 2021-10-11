@@ -9,21 +9,30 @@ public class Starter {
 		
 		
 		Student s1 = new Student();
-		Employee e1 = new Employee();
+//		Employee e1 = new Employee();
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter employee name: ");
-		e1.pName = scan.nextLine();
-		System.out.println(e1.pName);
+		
+		//How do we read in hire date, start date, etc...?
+//		System.out.println("Enter employee name: ");
+//		e1.pName = scan.nextLine();
+//		System.out.println(e1.pName);
 		
 		
 		System.out.println("Enter student's name: ");
-		s1.pName = scan.nextLine();
+		System.out.println("Enter student's current year (fr, soph, jr, senior: ");
+		System.out.println("Enter student's expected graduation year: ");
 		
-		System.out.println("Enter student's year: ");
 		s1.pName = scan.nextLine();
+		s1.year = scan.nextLine();
+		s1.gradYear = scan.nextInt();
+		
+		
+		
 		
 		System.out.println(s1.pName);
+		System.out.println(s1.year);
+		System.out.println(s1.gradYear);
 		
 		
 		
