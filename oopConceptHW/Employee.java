@@ -4,7 +4,8 @@ import java.util.*;
 
 
 public class Employee extends Person {
-	int empID; 
+	int empID;
+	Date hiredate; 
 	double empSalary;
 	double empBonus; 
 	
