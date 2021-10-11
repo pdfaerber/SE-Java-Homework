@@ -8,7 +8,7 @@ public class Student extends Person {
 	int scoreOne;
 	int scoreTwo;
 	int scoreThree; 
-	double gpa; 
+	double gradeAvg; 
 	
 	public Student() {
 		
@@ -17,7 +17,7 @@ public class Student extends Person {
 	
 
 	public Student(String pName, char pGender, int pAge, String major, String year, int gradYear, int scoreOne, int scoreTwo, int scoreThree,
-			double gpa) {
+			double gradeAvg) {
 		super(pName, pGender, pAge);
 		this.major = major;
 		this.year = year;
@@ -25,16 +25,20 @@ public class Student extends Person {
 		this.scoreOne = scoreOne;
 		this.scoreTwo = scoreTwo;
 		this.scoreThree = scoreThree;
-		this.gpa = gpa;
+		this.gradeAvg = gradeAvg;
 	}
 
-
+double gradeAvg( int scoreOne, int scoreTwo, int scoreThree) {
+	
+	double avg = ((scoreOne + scoreTwo + scoreThree)/ 3);
+	return avg;
+}//end gradeAvg	 
 
 
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-	}
+	}//end main
 
-}
+}//end class Student
