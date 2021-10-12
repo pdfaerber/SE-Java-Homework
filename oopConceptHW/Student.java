@@ -1,7 +1,7 @@
 package oopConceptHW;
 import java.util.*;
 
-public class Student extends Person {
+public class Student extends Person implements PersonInterface{
 	String major;
 	String year;
 	int gradYear; 
@@ -34,11 +34,43 @@ double gradeAvg( int scoreOne, int scoreTwo, int scoreThree) {
 	return avg;
 }//end gradeAvg	 
 
+//public double calculate(int this.gradeAvg()) {
+//	 
+//	return avg; 
+//}
 
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+void input() {
+	System.out.println("\n---------Student Mid-term Update--------------------------------\n");
+	Scanner scan = new Scanner(System.in);
+	System.out.println("Enter student's name: ");
+	System.out.println("Enter student's current year (fr, soph, jr, senior: ");
+	System.out.println("Enter student's expected graduation year: ");
+	System.out.println("Enter student's first exam score: ");
+	System.out.println("Enter student's second exam score: ");
+	System.out.println("Enter student's third exam score: ");
+	
+	this.pName = scan.nextLine();
+	this.year = scan.nextLine();
+	this.gradYear = scan.nextInt();
+	this.scoreOne = scan.nextInt();
+	this.scoreTwo = scan.nextInt();
+	this.scoreThree = scan.nextInt();
+	
+//	scan.close();
+}
 
-	}//end main
+void display() {
+	System.out.println("----------Student Summary--------------------------------\n");
+	
+	System.out.println("Student's name is: " + this.pName);
+	System.out.println("Student is enrolled as a: " + this.year);
+	System.out.println("Student's expected graduation year is: " + this.gradYear);
+	System.out.println("Exam One: " + this.scoreOne);
+	System.out.println("Exam Two: " + this.scoreTwo);
+	System.out.println("Exam Three: " + this.scoreThree);
+	System.out.println("Student's grade avg this far is: " + this.gradeAvg(this.scoreOne, this.scoreTwo, this.scoreThree));
+}
+	
 
 }//end class Student
